@@ -12,6 +12,8 @@
 		043D11A122B808DF0059431F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D119F22B808DF0059431F /* Main.storyboard */; };
 		043D11A322B808E00059431F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043D11A222B808E00059431F /* Assets.xcassets */; };
 		043D11A622B808E00059431F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D11A422B808E00059431F /* LaunchScreen.storyboard */; };
+		043D11B122B80AE70059431F /* ChangeCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D11B022B80AE70059431F /* ChangeCityViewController.swift */; };
+		4E56974F885397671307FF6D /* Pods_Clima_v2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482EB9FFF225D707A954F622 /* Pods_Clima_v2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		043D11A222B808E00059431F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		043D11A522B808E00059431F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043D11A722B808E00059431F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043D11B022B80AE70059431F /* ChangeCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCityViewController.swift; sourceTree = "<group>"; };
+		482EB9FFF225D707A954F622 /* Pods_Clima_v2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clima_v2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC6A0131C65316541CC9DB2 /* Pods-Clima v2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clima v2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clima v2/Pods-Clima v2.release.xcconfig"; sourceTree = "<group>"; };
+		D2DD8564EE9A73E8D8FA085B /* Pods-Clima v2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clima v2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clima v2/Pods-Clima v2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E56974F885397671307FF6D /* Pods_Clima_v2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				043D119A22B808DF0059431F /* Clima v2 */,
 				043D119922B808DF0059431F /* Products */,
+				652A60DF4A69FA9ED739B811 /* Pods */,
+				7E2D912D69BF0333DD20FDDC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,56 @@
 		043D119A22B808DF0059431F /* Clima v2 */ = {
 			isa = PBXGroup;
 			children = (
-				043D119B22B808DF0059431F /* AppDelegate.swift */,
-				043D119D22B808DF0059431F /* ViewController.swift */,
-				043D119F22B808DF0059431F /* Main.storyboard */,
+				043D11AF22B80A8D0059431F /* Model */,
+				043D11AD22B80A4C0059431F /* View */,
+				043D11AE22B80A620059431F /* Controller */,
 				043D11A222B808E00059431F /* Assets.xcassets */,
 				043D11A422B808E00059431F /* LaunchScreen.storyboard */,
 				043D11A722B808E00059431F /* Info.plist */,
 			);
 			path = "Clima v2";
+			sourceTree = "<group>";
+		};
+		043D11AD22B80A4C0059431F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				043D119F22B808DF0059431F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		043D11AE22B80A620059431F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				043D119B22B808DF0059431F /* AppDelegate.swift */,
+				043D119D22B808DF0059431F /* ViewController.swift */,
+				043D11B022B80AE70059431F /* ChangeCityViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		043D11AF22B80A8D0059431F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		652A60DF4A69FA9ED739B811 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2DD8564EE9A73E8D8FA085B /* Pods-Clima v2.debug.xcconfig */,
+				8EC6A0131C65316541CC9DB2 /* Pods-Clima v2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E2D912D69BF0333DD20FDDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				482EB9FFF225D707A954F622 /* Pods_Clima_v2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 043D11AA22B808E00059431F /* Build configuration list for PBXNativeTarget "Clima v2" */;
 			buildPhases = (
+				0FEDA2683ACDDF282DB55158 /* [CP] Check Pods Manifest.lock */,
 				043D119422B808DF0059431F /* Sources */,
 				043D119522B808DF0059431F /* Frameworks */,
 				043D119622B808DF0059431F /* Resources */,
+				A1B0661C33B461CD8C7A3E8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +183,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FEDA2683ACDDF282DB55158 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Clima v2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1B0661C33B461CD8C7A3E8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Clima v2/Pods-Clima v2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clima v2/Pods-Clima v2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		043D119422B808DF0059431F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +239,7 @@
 			files = (
 				043D119E22B808DF0059431F /* ViewController.swift in Sources */,
 				043D119C22B808DF0059431F /* AppDelegate.swift in Sources */,
+				043D11B122B80AE70059431F /* ChangeCityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +383,7 @@
 		};
 		043D11AB22B808E00059431F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2DD8564EE9A73E8D8FA085B /* Pods-Clima v2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +402,7 @@
 		};
 		043D11AC22B808E00059431F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EC6A0131C65316541CC9DB2 /* Pods-Clima v2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
