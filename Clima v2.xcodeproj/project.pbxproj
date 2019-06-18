@@ -13,6 +13,9 @@
 		043D11A322B808E00059431F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043D11A222B808E00059431F /* Assets.xcassets */; };
 		043D11A622B808E00059431F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D11A422B808E00059431F /* LaunchScreen.storyboard */; };
 		043D11B122B80AE70059431F /* ChangeCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D11B022B80AE70059431F /* ChangeCityViewController.swift */; };
+		043D11B322B867120059431F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D11B222B867120059431F /* Constants.swift */; };
+		043D11B522B8B1020059431F /* ForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D11B422B8B1020059431F /* ForecastCollectionViewCell.swift */; };
+		04B5001122B8D20900761790 /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5001022B8D20900761790 /* WeatherDataModel.swift */; };
 		4E56974F885397671307FF6D /* Pods_Clima_v2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482EB9FFF225D707A954F622 /* Pods_Clima_v2.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +28,9 @@
 		043D11A522B808E00059431F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043D11A722B808E00059431F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		043D11B022B80AE70059431F /* ChangeCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCityViewController.swift; sourceTree = "<group>"; };
+		043D11B222B867120059431F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		043D11B422B8B1020059431F /* ForecastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCollectionViewCell.swift; sourceTree = "<group>"; };
+		04B5001022B8D20900761790 /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
 		482EB9FFF225D707A954F622 /* Pods_Clima_v2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clima_v2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC6A0131C65316541CC9DB2 /* Pods-Clima v2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clima v2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clima v2/Pods-Clima v2.release.xcconfig"; sourceTree = "<group>"; };
 		D2DD8564EE9A73E8D8FA085B /* Pods-Clima v2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clima v2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clima v2/Pods-Clima v2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				043D119B22B808DF0059431F /* AppDelegate.swift */,
+				043D11B422B8B1020059431F /* ForecastCollectionViewCell.swift */,
 				043D119D22B808DF0059431F /* ViewController.swift */,
 				043D11B022B80AE70059431F /* ChangeCityViewController.swift */,
 			);
@@ -94,6 +101,8 @@
 		043D11AF22B80A8D0059431F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				043D11B222B867120059431F /* Constants.swift */,
+				04B5001022B8D20900761790 /* WeatherDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -239,7 +248,10 @@
 			files = (
 				043D119E22B808DF0059431F /* ViewController.swift in Sources */,
 				043D119C22B808DF0059431F /* AppDelegate.swift in Sources */,
+				04B5001122B8D20900761790 /* WeatherDataModel.swift in Sources */,
 				043D11B122B80AE70059431F /* ChangeCityViewController.swift in Sources */,
+				043D11B522B8B1020059431F /* ForecastCollectionViewCell.swift in Sources */,
+				043D11B322B867120059431F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,7 +408,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.deontecodes.Clima-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -415,7 +427,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.deontecodes.Clima-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
