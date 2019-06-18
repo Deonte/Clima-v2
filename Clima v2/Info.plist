@@ -22,6 +22,8 @@
 	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Your location is used to get the weather information from your current location.</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

@@ -15,6 +15,8 @@ class WeatherDataModel {
     var condition : Int = 0
     var city: String = ""
     var weatherIconName : String = ""
+    var weatherDescription: String = ""
+    var humidity: Int = 0
     
     //This method turns a condition code into the name of the weather condition image
     
@@ -41,7 +43,7 @@ class WeatherDataModel {
             return "tstorm3"
             
         case 800 :
-            return "sunny"
+            return "overcast"
             
         case 801...804 :
             return "cloudy2"
@@ -57,6 +59,49 @@ class WeatherDataModel {
             
         default :
             return "dunno"
+        }
+        
+    }
+    // Going to refactor this, this was a quick solution
+    func updateWeatherDescription(condition: Int) -> String {
+        
+        switch (condition) {
+            
+        case 0...300 :
+            return "Scattered Thunderstorms"
+            
+        case 301...500 :
+            return "Light Rain"
+            
+        case 501...600 :
+            return "Heavy Showers"
+            
+        case 601...700 :
+            return "Snow"
+            
+        case 701...771 :
+            return "Foggy"
+            
+        case 772...799 :
+            return "Thunderstorms"
+            
+        case 800 :
+            return "Cloudy"
+            
+        case 801...804 :
+            return "Partly Cloudy"
+            
+        case 900...903, 905...1000  :
+            return "Severe Thunderstorms"
+            
+        case 903 :
+            return "Heavy Snow"
+            
+        case 904 :
+            return "Sunny"
+            
+        default :
+            return "Dunno"
         }
         
     }

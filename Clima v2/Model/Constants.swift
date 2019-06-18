@@ -8,8 +8,8 @@
 
 import Foundation
 
-let CURRENT_WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather"
-let WEATHER_FORECAST = "api.openweathermap.org/data/2.5/forecast?q"
+let CURRENT_WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather"
+let WEATHER_FORECAST = "https://api.openweathermap.org/data/2.5/forecast?q"
 let APP_ID = "88bd1e471ab4cfb708d1370eabd51c3e"
 
 let forecastCell = "forecastCell"
